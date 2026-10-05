@@ -1,0 +1,138 @@
+/*reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: #B2DFDB;
+}
+
+/*Body styling*/
+body {
+    margin: 100px;
+    padding: 20px;
+    width: 75%;
+    height: 50%;
+  
+}
+
+/*styling the header*/
+header {
+    top: 50px;
+    left: 50%;
+    width: min(95%, 1200px);
+    z-index: 1000px;
+    padding: 10px;
+}
+
+/*styling h1*/
+h1{
+    font-size: larger;
+    font-style: italic ;
+    color:darkcyan;
+text-align: center;
+font-weight: bold;
+}
+
+/*Styling h3*/
+h3{
+    font-size:large;
+    font-style:oblique;
+    color:darkcyan;
+    text-align:center;
+    font-weight: normal;
+}
+/*Styling the brief description*/
+.description{
+   font-size: medium;
+padding:10px auto;
+margin-top:15px;
+}
+
+/*styling cards*/
+#Cards{
+    display: flex;
+    gap:30px;
+}
+.card-content{
+    border: 1px solid #000;
+    border-radius:10px;
+    box-shadow: 0 10px gray;
+    padding:20px;
+}
+/*Gives button a different color and applies hover*/
+button{
+background-color: darkcyan;
+cursor:pointer;
+color:#000;
+margin:15px;
+padding:5px;
+border-radius:5px;
+}
+
+button:hover{
+color: white;
+scale:1.02;
+}
+
+/*Styling transaction form*/
+.form{
+    border:2px solid #000;
+    border-radius: 10px;
+    margin:auto;
+    padding:10px;
+    justify-content: end;
+    width:50%;
+    height:30%;
+}
+
+    /*Displaying income in green and expense in red*/
+    .Income{
+        color:green;
+    }
+    
+    .Expense{
+        color:red;
+    }
+
+/*styling transaction history table*/
+.history{
+    display: block;
+    border: 2px solid #000;
+    border-radius: 15px;
+    justify-content: end;
+    gap: 40px;
+    padding: 20px;
+}
+
+/*Displaying the footer at the center of the page with a different color*/
+footer{
+    padding: 20px;
+    color: darkslategrey;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/*Making the page responsive to phones*/
+@media(max-width:600px;){
+    .container{
+        width:75%;
+        margin: auto;
+    }
+    #Cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Making the page responsive to computers*/
+@media(max-width:1200px){
+    .container{
+        width:100%;
+    }
+    #Cards{
+        display: grid;
+        grid-template-columns: repeat(3,ifr);
+        gap: 20px;
+    }
+}

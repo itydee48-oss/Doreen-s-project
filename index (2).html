@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense-tracker</title>
+    <!--Links the current file to the CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--header-->
+        <header>
+            <h1>Personal Expense Tracker  </h1>
+        </header>
+      
+        
+        <section id="Description">
+            <!--Briesf description of what the website is about-->
+            <p title="Description" class="description">
+                The aim of this website is to enable user to
+                keep track of how they spend their finances
+                thus enabling them to plan on how to manage their
+                finances.
+            </p>
+        </section>
+        <br>
+        <br>
+        <section id="Cards" class="cards">
+            <!--Cards showing current balance,total income and total expenses-->
+            <div class="card-content">
+                <h4 class="Card-title">Current Balance</h4>
+                <p id="Balance">KES=0</p>
+            </div>
+            <div class="card-content">
+                <h4 class="Card-title">Total Income</h4>
+                <p id="Income">KES=0</p>
+            </div>
+            <div class="card-content">
+                <h4 class="Card-title">Total Expenses</h4>
+                <p id="Expenses">KES=0</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--transaction form-->
+        <section id="Transaction form">
+            <h3>Transaction Form</h3>
+            <div class="form">
+            <!--Shows the current transaction being made by the user-->
+             <form action="#" method="post">
+            <label>Description</label>
+            <input type="text" name="description" value="" placeholder="Describe category" id="description" >
+            <br>
+            <br>
+            <label>Type</label>
+            <select id="type" required>
+                <option value="" disabled selected>Transaction type</option>
+                <option class="Income" value="Income">Income</option>
+                <option class="Expense" value="Expense">Expense</option>
+            </select>
+            <br>
+            <br>
+            <label>Amount</label>
+            <input type="currency" name="amount" value="KES=" id="amt">
+            <br>
+            <br>
+            <label>Date</label>
+            <input type="date" name="date" value="" id="date">
+            <br>
+             <button class="button" id="bn">+ Add Transaction</button>
+            <br>
+           </form>
+           </div>
+        </section>
+        <br>
+        <br>
+        <section id="Transaction-history" class="transactions">
+            <h3>Transaction history</h3>
+            <div class="history" id="transaction-list">
+                <!--Shows the past transactions made by the user-->
+                <ul id="transaction-list"></ul>
+            </div>
+        </section>
+    </div>
+    <footer>Website designed by Doreen ©2026</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
